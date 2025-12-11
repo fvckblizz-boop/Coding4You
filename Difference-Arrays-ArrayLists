@@ -1,0 +1,58 @@
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // -------------------- ARRAY EXAMPLE --------------------
+        // Arrays must have a fixed size when they are created.
+        int[] numberArray = new int[3];
+        numberArray[0] = 10;
+        numberArray[1] = 20;
+        numberArray[2] = 30;
+
+        System.out.println("Array elements:");
+        for (int num : numberArray) {
+            System.out.println(num);
+        }
+
+        // The following line would cause an error because arrays cannot grow:
+        // numberArray[3] = 40; // ERROR: Array index out of bounds
+
+
+        // -------------------- ARRAY LIST EXAMPLE --------------------
+        // ArrayLists can grow and shrink dynamically.
+        ArrayList<Integer> numberList = new ArrayList<>();
+
+        numberList.add(10);
+        numberList.add(20);
+        numberList.add(30);
+
+        System.out.println("\nArrayList elements:");
+        for (int num : numberList) {
+            System.out.println(num);
+        }
+
+        // Unlike arrays, ArrayLists allow adding new elements at any time.
+        numberList.add(40);  // This works with no issue
+
+        System.out.println("\nArrayList after adding a new element:");
+        for (int num : numberList) {
+            System.out.println(num);
+        }
+
+        // ArrayLists also have useful built-in methods like remove()
+        numberList.remove(1); // Removes the element at index 1 (value 20)
+
+        System.out.println("\nArrayList after removing index 1:");
+        for (int num : numberList) {
+            System.out.println(num);
+        }
+
+
+        // ------------------- SUMMARY -------------------
+        System.out.println("\nSummary:");
+        System.out.println("Arrays are fixed in size and store primitives directly.");
+        System.out.println("ArrayLists are dynamic and require wrapper classes (e.g., Integer).");
+    }
+}
