@@ -6,13 +6,13 @@ public class Main {
 
         // -------------------- ARRAY EXAMPLE --------------------
         // Arrays must have a fixed size when they are created.
-        int[] numberArray = new int[3];
-        numberArray[0] = 10;
-        numberArray[1] = 20;
-        numberArray[2] = 30;
+        int[] NumeroArray = new int[3];
+        NumeroArray[0] = 5;
+        NumeroArray[1] = 10;
+        NumeroArray[2] = 20;
 
         System.out.println("Array elements:");
-        for (int num : numberArray) {
+        for (int num : NumeroArray) {
             System.out.println(num);
         }
 
@@ -22,30 +22,30 @@ public class Main {
 
         // -------------------- ARRAY LIST EXAMPLE --------------------
         // ArrayLists can grow and shrink dynamically.
-        ArrayList<Integer> numberList = new ArrayList<>();
+        ArrayList<Integer> NumeroUnoList = new ArrayList<>();
 
-        numberList.add(10);
-        numberList.add(20);
-        numberList.add(30);
+        NumeroUnoList.add(5);
+        NumeroUnoList.add(10);
+        NumeroUnoList.add(20);
 
         System.out.println("\nArrayList elements:");
-        for (int num : numberList) {
+        for (int num : NumeroUnoList) {
             System.out.println(num);
         }
 
         // Unlike arrays, ArrayLists allow adding new elements at any time.
-        numberList.add(40);  // This works with no issue
+        NumeroUnoList.add(40);  // This works with no issue
 
         System.out.println("\nArrayList after adding a new element:");
-        for (int num : numberList) {
+        for (int num : NumeroUnoList) {
             System.out.println(num);
         }
 
         // ArrayLists also have useful built-in methods like remove()
-        numberList.remove(1); // Removes the element at index 1 (value 20)
+        NumeroUnoList.remove(1); // Removes the element at index 1 (value 20)
 
         System.out.println("\nArrayList after removing index 1:");
-        for (int num : numberList) {
+        for (int num : NumeroUnoList) {
             System.out.println(num);
         }
 
