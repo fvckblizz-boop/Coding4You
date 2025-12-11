@@ -2,7 +2,8 @@ import java.util.ArrayList;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+{
 
         // -------------------- ARRAY EXAMPLE --------------------
         // Arrays must have a fixed size when they are created.
@@ -12,9 +13,10 @@ public class Main {
         NumeroArray[2] = 20;
 
         System.out.println("Array elements:");
-        for (int num : NumeroArray) {
+        for (int num : NumeroArray) 
+{
             System.out.println(num);
-        }
+}
 
         // The following line would cause an error because arrays cannot grow:
         // numberArray[3] = 40; // ERROR: Array index out of bounds
@@ -29,30 +31,33 @@ public class Main {
         NumeroUnoList.add(20);
 
         System.out.println("\nArrayList elements:");
-        for (int num : NumeroUnoList) {
+        for (int num : NumeroUnoList) 
+{
             System.out.println(num);
-        }
+}
 
         // Unlike arrays, ArrayLists allow adding new elements at any time.
         NumeroUnoList.add(40);  // This works with no issue
 
         System.out.println("\nArrayList after adding a new element:");
-        for (int num : NumeroUnoList) {
+        for (int num : NumeroUnoList) 
+{
             System.out.println(num);
-        }
+}
 
         // ArrayLists also have useful built-in methods like remove()
         NumeroUnoList.remove(1); // Removes the element at index 1 (value 20)
 
         System.out.println("\nArrayList after removing index 1:");
-        for (int num : NumeroUnoList) {
+        for (int num : NumeroUnoList) 
+{
             System.out.println(num);
-        }
+}
 
 
         // ------------------- SUMMARY -------------------
         System.out.println("\nSummary:");
-        System.out.println("Arrays are fixed in size and store primitives directly.");
-        System.out.println("ArrayLists are dynamic and require wrapper classes (e.g., Integer).");
-    }
+        System.out.println("Arrays are not sus and set in size and store variables directly El Capitan!.");
+        System.out.println("Array lists are basically dynamic af, but you gotta use wrapper classes like Integer because they don't vibe with raw variables.");
+}
 }
